@@ -1,9 +1,18 @@
-body,html{
-	padding: 0;
-	margin: 0;
-	background: #cecece;
+body{
+	background: url('/images/bg.jpg') repeat;
 }
-.container{
-	width: 90%;
-	margin:20px auto;
+.header{
+	background: url('/images/bg-header.png') repeat-x;
+}
+ul.top-menu li{
+	width: 100px;
+  height: 45px;
+  margin: 15px 18px 0 18px;
+	background: url('/images/bg-menu.png') no-repeat;
+}
+ul.top-menu li:nth-child(1){
+	width: 100px;
+  height: 45px;
+  margin: 15px 18px 0 18px;
+	background: url('/images/bg-menu.png') 20px 0px;
 }

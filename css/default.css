@@ -1,5 +1,5 @@
 body{
-	background: url('../images/bg.jpg') repeat;
+	background: url('/images/bg.jpg') repeat;
 }
 .container{
 	width: 100%;
@@ -7,7 +7,7 @@ body{
 }
 .header{
 	padding-bottom: 20px;
-	background: url('../images/bg-header.png') repeat-x;
+	background: url('/images/bg-header.png') repeat-x;
 }
 ul,li{
 	padding: 0;
@@ -22,16 +22,16 @@ ul.top-menu li a{
   height: 40px;
   position: relative;
   display: inline-block;
-	background: url('../images/bg-menu.png') no-repeat -31px -5px;
+	background: url('/images/bg-menu.png') no-repeat -31px -5px;
 }
 ul.top-menu li:nth-child(2) a{
-	background: url('../images/bg-menu.png') -328px -5px;
+	background: url('/images/bg-menu.png') -328px -5px;
 }
 ul.top-menu li:nth-child(3) a{
-	background: url('../images/bg-menu.png') -227px -5px;
+	background: url('/images/bg-menu.png') -227px -5px;
 }
 ul.top-menu li:nth-child(4) a{
-	background: url('../images/bg-menu.png') -426px -5px;
+	background: url('/images/bg-menu.png') -426px -5px;
 }
 ul.top-menu li a span{
 	display: none;
@@ -50,16 +50,16 @@ ul.top-menu li a span{
   color: #dcdcdc;
 }
 ul.top-menu li.selected a{
-	background: url('../images/bg-menu.png') no-repeat -31px -50px;
+	background: url('/images/bg-menu.png') no-repeat -31px -50px;
 }
 ul.top-menu li:nth-child(2).selected a{
-	background: url('../images/bg-menu.png') no-repeat -328px -50px;
+	background: url('/images/bg-menu.png') no-repeat -328px -50px;
 }
 ul.top-menu li:nth-child(3).selected a{
-	background: url('../images/bg-menu.png') no-repeat -227px -50px;
+	background: url('/images/bg-menu.png') no-repeat -227px -50px;
 }
 ul.top-menu li:nth-child(4).selected a{
-	background: url('../images/bg-menu.png') no-repeat -426px -50px;
+	background: url('/images/bg-menu.png') no-repeat -426px -50px;
 }
 ul.top-menu li:hover a,ul.top-menu li.selected:hover a{
 	background: none;
@@ -78,7 +78,7 @@ ul.top-menu li:hover a span{
 .myprogress .progress-bar{
 	position: relative;
 	border-radius: 5px;
-	background: url('../images/bar-green.png') repeat-x;
+	background: url('/images/bar-green.png') repeat-x;
 	animation: progress 0.5s linear infinite;
 	-webkit-animation: progress 0.5s linear infinite;
 }
@@ -90,7 +90,7 @@ ul.top-menu li:hover a span{
 	right: -12px;
 	top: -4px;
 	z-index: 20;
-	background: url('../images/pointer-green.png') no-repeat;
+	background: url('/images/pointer-green.png') no-repeat;
 }
 
 @-webkit-keyframes progress {
@@ -141,15 +141,26 @@ ul.top-menu li:hover a span{
 	max-width: 800px;
 	margin: 40px auto;
 	padding-top: 54px;
+	position: relative;
 	border-bottom: 1px solid #fff;
-	background: #f0f0f0 url('../images/bg-content-header.png') repeat-x;
+	background: #f0f0f0 url('/images/bg-content-header.png') repeat-x;
 }
 .content .topbar{
 	height: 11px;
-	background: url('../images/bg-content-effect.png') repeat-x;
+	background: url('/images/bg-content-effect.png') repeat-x;
 }
 .content .content-wrap{
-	padding: 0 10px 10px 10px;
+	padding: 0 10px 40px 10px;
+}
+.content .bottombar{
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	position: absolute;
+	background: url('/images/bg-content-footer.png') 0px 0px repeat-x;
 }
 .content-item{
 	display: none;
@@ -166,20 +177,20 @@ ul.top-menu li:hover a span{
 	top: 50%;
 	opacity: 0;
 	transform: translateY(-50%);
-	background: url('../images/bg_direction_nav.png') no-repeat;
+	background: url('/images/bg_direction_nav.png') no-repeat;
 }
 .carousel-control.left i{
 	left: -30px;
 }
 .carousel-control.right i{
 	right: -30px;
-	background: url('../images/bg_direction_nav.png') -30px 0px no-repeat
+	background: url('/images/bg_direction_nav.png') -30px 0px no-repeat
 }
-.separator{
+p.separator{
 	max-width:540px; 
 	height: 39px;
 	margin: 10px auto;
-	background: url('../images/separator.png');
+	background: url('/images/separator.png');
 }
 
 /*works*/
@@ -187,7 +198,7 @@ ul.btn-list{
 	text-align: center;
 	margin-bottom: 20px;
 }
-ul.btn-list li{
+.my-buttom{
 	display: inline-block;
 	padding: 4px 10px;
 	color: #FFFFFF;
@@ -218,7 +229,7 @@ ul.btn-list li{
      -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0px rgba(255, 255, 255, 0.9);
   	    	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0px rgba(255, 255, 255, 0.9);
 }
-ul.btn-list li:hover{
+.my-buttom:hover{
 	color: #ffffff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	background-color: #222222;
@@ -230,7 +241,7 @@ ul.btn-list li:hover{
 		    	transition: background-position 0.1s linear;
 }
 
-ul.btn-list li.selected{
+.my-buttom.selected{
 	background-image: none;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
   outline: 0 none;
@@ -242,4 +253,98 @@ ul.photo-list li{
 	margin: 0 20px 40px;
 	padding: 5px 5px 40px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1)
+}
+
+/*resume*/
+.baseinfo{
+	/*margin: 0 20px 20px;*/
+}
+.baseinfo .pic{
+	width: 230px;
+	height: 260px;
+	margin-right: 10px; 
+	background: url('/images/frame-front.png') no-repeat;
+}
+.baseinfo .pic img{
+	margin: 16px 17px;
+}
+.baseinfo .info{
+	width: 510px;
+	margin-left: 10px;
+}
+h2{
+	font-size: 24px;
+  line-height: 40px;
+  color: #373737;
+  font-family: 'Muli', Helvetica, Arial;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px #fff;
+  border-bottom: solid 1px #cecece;
+  margin-bottom: 15px;
+}
+.baseinfo .info .info-item{
+	margin-bottom: 15px;
+	line-height: 14px;
+}
+.baseinfo .info .info-item .item-name{
+	width: 30%
+	font-size: 14px;
+  font-family: Helvetica, Arial;
+  font-weight: bold;
+  color: #373737;
+}
+.baseinfo .info .info-item .item-info{
+	width: 70%;
+	font-size: 13px;
+	text-align: left;
+	font-family: Helvetica, Arial;
+}
+.extrainfo{
+	padding: 0 10px;
+}
+h3{
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+.extrainfo p{
+	margin-bottom: 20px;
+}
+
+/*contact*/
+.contact .wrap{
+	padding: 0 10px;
+}
+.contact #mapcontainer{
+	padding: 10px;
+	background: #fff;
+	height: 300px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3)
+}
+
+.contact .message-wrap .input-wrap{
+	width: 60%;
+	padding-right: 10px;
+}
+.contact .message-wrap .input-wrap input,
+.contact .message-wrap .input-wrap textarea{
+	width: 60%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	line-height: 20px;
+	color: #575757;
+	padding: 4px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	box-shadow: inset 0 0 1px 0px rgba(0, 0, 0, 0.3);
+}
+.contact .message-wrap .input-wrap textarea{
+	width: 80%;
+	min-height: 140px;
+	overflow-y: visible;
+	display: block;
+}
+.contact .message-wrap .info-wrap{
+	width: 40%;
+	padding-left: 10px;
 }

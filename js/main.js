@@ -105,7 +105,7 @@ $(function(){
 			splashID: "#jSplash",
 			loaderVPos: '70%',
 			autoClose: false,
-			closeBtnText: "Enter!",
+			closeBtnText: "Enter",
 			splashFunction: function() {  
 				//passing Splash Screen script to jPreLoader
 				$('#jSplash').children('section').not('.selected').hide();

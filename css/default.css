@@ -79,8 +79,11 @@ ul.top-menu li:hover a span{
 	position: relative;
 	border-radius: 5px;
 	background: url('/images/bar-green.png') repeat-x;
+	-webkit-animation: progress .5s linear infinite;
+	-moz-animation: progress 0.5s linear infinite;
+	-ms-animation: progress 0.5s linear infinite;
+	-o-animation: progress 0.5s linear infinite;
 	animation: progress 0.5s linear infinite;
-	-webkit-animation: progress 0.5s linear infinite;
 }
 .myprogress .progress-bar i{
 	display: inline-block;

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ page.title }}</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/css/default.css">
+	<link rel="stylesheet" type="text/css" href="/css/jpreloader.css">
+</head>
+<body>
+	<div class="container">
+		<!-- S header -->
+		<div class="header clearfix">
+		  <div class="col-md-6 col-md-offset-3">
+		  	<ul class="top-menu clearfix">
+		  		<li class="col-md-3 pull-left selected" data-id="home">
+		  			<a href="javascript:void(0)">
+		  				<span>Home</span>
+		  			</a>
+		  		</li>
+		  		<li class="col-md-3 pull-left" data-id="works">
+		  			<a href="javascript:void(0)">
+		  				<span>Works</span>
+		  			</a>
+		  		</li>
+		  		<li class="col-md-3 pull-left" data-id="resume">
+		  			<a href="javascript:void(0)">
+		  				<span>Resume</span>
+		  			</a>
+		  		</li>
+		  		<li class="col-md-3 pull-left" data-id="contact">
+		  			<a href="javascript:void(0)">
+		  				<span>Contact</span>
+		  			</a>
+		  		</li>
+		  	</ul>
+		  	<div class="myprogress">
+				  <div class="progress-bar" style="width:0%">
+				  	<i></i>
+				  </div>
+				</div>
+		  </div>
+		</div>
+		<!-- E header -->
+
+		<div class="content">
+			<p class="topbar"></p>
+			<div class="content-wrap">
+				<!-- S home -->
+				<div class="content-item home active">
+					{{ content }}
+				</div>
+				<!-- E home -->
+
+				<!-- S works -->
+				<div class="content-item works">
+					<ul class="btn-list" id="photo-filter">
+						<li class="my-buttom" data-filter="*">All</li>
+						<li class="my-buttom" data-filter=".nodejs">Nodejs</li>
+						<li class="my-buttom" data-filter=".vuejs">vuejs</li>
+						<li class="my-buttom" data-filter=".public">wechat public</li>
+						<li class="my-buttom" data-filter=".microapp">wechat microapp</li>
+					</ul>
+					<ul class="photo-list clearfix" id="photo-list">
+						<li class="nodejs pull-left isotope-item">
+							<img src="/images/photo.jpg" width="145" height="145">
+						</li>
+						<li class="vuejs pull-left isotope-item">
+							<img src="/images/photo.jpg" width="145" height="145">
+						</li>
+						<li class="microapp pull-left isotope-item">
+							<img src="/images/photo.jpg" width="145" height="145">
+						</li>
+						<li class="nodejs pull-left isotope-item">
+							<img src="/images/photo.jpg" width="145" height="145">
+						</li>
+						<li class="vuejs pull-left isotope-item">
+							<img src="/images/photo.jpg" width="145" height="145">
+						</li>
+						<li class="public pull-left isotope-item">
+							<img src="/images/photo.jpg" width="145" height="145">
+						</li>
+						<li class="public pull-left isotope-item">
+							<img src="/images/photo.jpg" width="145" height="145">
+						</li>
+						<li class="public pull-left isotope-item">
+							<img src="/images/photo.jpg" width="145" height="145">
+						</li>
+					</ul>
+				</div>
+				<!-- E works -->
+
+				<!-- S resume -->
+				<dir class="content-item resume">
+					<div class="baseinfo clearfix">
+						<div class="pic pull-left">
+							<img src="/images/me.jpg" width="196" height="196">
+						</div>
+						<div class="info pull-left">
+							<h2>About me</h2>
+							<div class="info-item clearfix">
+								<div class="item-name pull-left">Name</div>
+								<div class="item-info pull-right">Pan jifei</div>
+							</div>
+							<div class="info-item clearfix">
+								<div class="item-name pull-left">Date of birth</div>
+								<div class="item-info pull-right">Web, 10 1993</div>
+							</div>
+							<div class="info-item clearfix">
+								<div class="item-name pull-left">Address</div>
+								<div class="item-info pull-right">Liuhe Rd. Xihu District,Hangzhou,Zhejiang</div>
+							</div>
+							<div class="info-item clearfix">
+								<div class="item-name pull-left">Email</div>
+								<div class="item-info pull-right">2809956575@qq.com</div>
+							</div>
+							<h2>Skills</h2>
+							<div class="info-item clearfix">
+								<div class="item-name pull-left">JavaScript</div>
+								<div class="item-info pull-right">70%</div>
+							</div>
+							<div class="info-item clearfix">
+								<div class="item-name pull-left">Html/Css</div>
+								<div class="item-info pull-right">70%</div>
+							</div>
+							<div class="info-item clearfix">
+								<div class="item-name pull-left">Vuejs</div>
+								<div class="item-info pull-right">60%</div>
+							</div>
+							<div class="info-item clearfix">
+								<div class="item-name pull-left">Nodejs</div>
+								<div class="item-info pull-right">60%</div>
+							</div>
+						</div>
+					</div>
+					<div class="education extrainfo">
+						<h2>Education</h2>
+						<h3>Zhejiang University of Technology - Computer Science, 2012</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas erat nunc. Phasellus vel orci ligula. Quisque dignissim velit vel augue adipiscing quis porta neque congue. Aliquam vulputate, odio sed rutrum eleifend, nisi mi facilisis turpis, ut sodales quam lectus eu felis. Pellentesque justo magna, tincidunt vel dignissim nec, tincidunt id nisi. Maecenas varius quam at ante laoreet quis semper ante egestas. In et velit dui. Sed porttitor condimentum rhoncus.</p>
+					</div>
+					<div class="experience extrainfo">
+						<h2>Experience</h2>
+						<h3>Hangzhou Jipao Technology - Web Developer, 2015-2016</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas erat nunc. Phasellus vel orci ligula. Quisque dignissim velit vel augue adipiscing quis porta neque congue. Aliquam vulputate, odio sed rutrum eleifend, nisi mi facilisis turpis, ut sodales quam lectus eu felis. Pellentesque justo magna, tincidunt vel dignissim nec, tincidunt id nisi. Maecenas varius quam at ante laoreet quis semper ante egestas. In et velit dui. Sed porttitor condimentum rhoncus.</p>
+						<h3>Hangzhou Jipao Technology - Web Developer, 2015-2016</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas erat nunc. Phasellus vel orci ligula. Quisque dignissim velit vel augue adipiscing quis porta neque congue. Aliquam vulputate, odio sed rutrum eleifend, nisi mi facilisis turpis, ut sodales quam lectus eu felis. Pellentesque justo magna, tincidunt vel dignissim nec, tincidunt id nisi. Maecenas varius quam at ante laoreet quis semper ante egestas. In et velit dui. Sed porttitor condimentum rhoncus.</p>
+					</div>
+				</dir>
+				<!-- E resume -->
+
+				<!-- S contact -->
+				<dir class="content-item contact">
+					<div class="wrap">
+						<div id="mapcontainer"></div>
+						<p class="separator"></p>
+						<div class="message-wrap clearfix">
+							<div class="input-wrap pull-left">
+								<h2>Drop me a line</h2>
+								<h3>Name</h3>
+								<input type="text" name="name" autocomplete="off">
+								<h3>Email</h3>
+								<input type="text" name="name" autocomplete="off">
+								<h3>Message</h3>
+								<textarea name="message" placeholder="say something I'm giving up on you..."></textarea>
+								<button class="my-buttom" type="submit">Submit</button>
+							</div>
+							<div class="info-wrap pull-left">
+								<h2>Contact Info</h2>
+								<h3>Email</h3>
+								<p>2809956575@qq.com</p>
+								<h3>Github</h3>
+								<p><a href="https://github.com/Panfen" target="_blank">https://github.com/Panfen</a></p>
+								<h3>Weibo</h3>
+								<p><a href="http://weibo.com/u/2996929713" target="_blank">http://weibo.com/u/2996929713</a></p>
+								<h3>Segmentfault</h3>
+								<p><a href="https://segmentfault.com/u/mangguowulidemao" target="_blank">https://segmentfault.com/u/mangguowulidemao</a></p>
+							</div>
+						</div>
+					</div>
+				</dir>
+				<!-- E contact -->
+
+			</div>
+			<p class="bottombar"></p>
+		</div>
+	</div>
+
+	<script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="/js/jpreloader.min.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>

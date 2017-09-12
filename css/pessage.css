@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #000;
+}
+.container{
+	width: 100%;
+	padding: 0;
+}
+
+/*content*/
+.content{
+	min-height:300px;
+	max-width: 800px;
+	margin: 40px auto;
+	padding-top: 54px;
+	position: relative;
+	border-bottom: 1px solid #fff;
+	background: #f0f0f0 url('../images/bg-content-header.png') repeat-x;
+}
+.content .topbar{
+	height: 11px;
+	background: url('../images/bg-content-effect.png') repeat-x;
+}
+.content .content-wrap{
+	padding: 0 10px 40px 10px;
+}
+.content .bottombar{
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	position: absolute;
+	background: url('../images/bg-content-footer.png') 0px 0px repeat-x;
+}
+h2{
+	text-align: center;
+}
